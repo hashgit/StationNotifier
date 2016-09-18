@@ -16,6 +16,7 @@
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
+	<script src="js/ng-cordova.min.js"></script>
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
@@ -31,6 +32,9 @@
 			Latitude: {{coords.latitude}}
 			<br />
 			Longitude: {{coords.longitude}}
+			<p class="padding">
+				<button class="button" ng-click="showToast('testing the bottom', 'long', 'bottom')">Show</button>
+			</p>
       </ion-content>
     </ion-pane>
   </body>
